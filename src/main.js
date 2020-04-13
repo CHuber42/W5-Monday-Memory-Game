@@ -20,7 +20,6 @@ $(".blue").click(function(event) {
   var card = $(this).children(); 
   card.show();
 
-  console.log(card.text())
   
   if (targetFlag === 1) {
     target1 = card;
@@ -30,11 +29,13 @@ $(".blue").click(function(event) {
     target2 = card;
     targetFlag = 1;
   }
-  if (targetFlag === 1) {
-    if (target1.text() !== target2.text()) {
-      target1.hide();
-      target2.hide();
+  setTimeout(function(){
+    if (targetFlag === 1) {
+      if (target1.text() !== target2.text()) {
+        target1.hide();
+        target2.hide();
+      }
     }
   }
-
+  , 1000);
 });
