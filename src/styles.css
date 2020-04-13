@@ -2,13 +2,16 @@ html {
   height: 100vh;
   width: 100vw;
 }
-
 .blue {
   background-image: url("http://members.tripod.com/fantasy_girl_2004/sitebuildercontent/sitebuilderpictures/back.jpg");
   height: 20vh;
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-weight: 800;
+  font-size: 500%;
 
 }
-
 .col-md-12 {
   height: 15vh;
 }
