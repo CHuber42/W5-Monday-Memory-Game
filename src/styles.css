@@ -15,3 +15,7 @@ html {
 .col-md-12 {
   height: 15vh;
 }
+
+.hidden {
+  display: none;
+}

@@ -8,5 +8,10 @@ var cards = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6];
 shuffle(cards);
 
 for (var i = 0; i < 12; i++){
-  $(`#${i}`).append(cards[i])
+  $(`#${i}`).append(cards[i]);
 }
+
+$("div").click(function(event) {
+  event.preventDefault();
+  $(this).children().show();
+});
